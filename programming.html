@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>My digital portfolio - Programming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="visuals.css">
+    <link rel="icon" type="image/x-icon" href="Logo.ico">
+    <meta charset="utf-8">
+</head>
+
+<body>
+<div class="back">
+    </div>
+<div class="navbar">
+           <div class="logo">
+<a href="index.html"><img src="Logo.png" alt="Logo"></a>
+    </div>
+        <ul class="topnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a class="active" href="programming.html">Programming</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="Database.html">Data base</a></li>
+            <li><a href="Threats.html">Threats</a></li>
+            <li><a href="Contactme.html" >contact me</a></li>
+        </ul>
+    </div>
+    <div class="welcome">
+        <h1> This is the programming page that has all my programming languages and code that i used on my course and my units.</h1>
+    </div>
+    <div class="languages">
+        <p>On this page i have included all my programming work that i have done on my course. This includes all the programming languages that i have used and all the different projects that i have done in each programming language. The programming languages i have used are CSS, JavaScript and python.</p>
+        <br><br>
+        <h2> On the left shows an image of my Python work for unit python.</h2>
+        <p>The python image shows basic python coding that i used to help me to learn the language.</p>
+        <br><br>
+        <h2> On the right shows an image of my CSS work for unit 3 and unit 13.</h2>
+        <p>The CSS image shows CSS code that i used to practice my skills on creating a website.</p>
+    </div>
+
+<button class="colorshape-btn"></button>
+<div class="colorshape"></div>
+
+<div class="image01">
+<img id="css"  class="gallery-img" src="css.jpg" alt="CSS">
+</div>
+
+<div class="gallery">
+<img id="python" class="gallery-img" src="python.jpg" alt="Python">
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img src="/images/image01.jpg" alt="Image 01" class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<script>
+var modal = 
+document.getElementById("myModal");
+var img = document.getElementById("css");
+var modalImg =
+document.getElementById("img01");
+var captionText = 
+document.getElementById("caption");
+
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span =
+document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+var modal = 
+document.getElementById("myModal");
+var img = document.getElementById("python");
+var modalImg =
+document.getElementById("img01");
+var captionText = 
+document.getElementById("caption");
+
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span =
+document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+
+<div id="Video_heading" class="tag">
+<h2>This is example of python. In the video i create a program, when the user enters a number the program inputs the range of the number.</h2>
+</div>
+
+<div id="My_Video" class="Video">
+<video width="320" height="240" controls>
+    <source src="Video.mov" type="video/mp4">
+</video>
+</div>
+
+</body>
+</html>

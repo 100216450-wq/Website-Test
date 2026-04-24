@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8"> 
+        <title>My digital portfoilo - Contact me </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="visuals.css">
+         <link rel="icon" type="image/x-icon" href="Logo.ico">
+</head>
+<body>
+<div class="back">
+    </div>
+    
+<div class="navbar">
+       <div class="logo">
+<a href="index.html"><img src="Logo.png" alt="Logo"></a>
+    </div>
+        <ul class="topnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="programming.html">Programming</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="Database.html">Data base</a></li>
+            <li><a href="Threats.html">Threats</a></li>
+            <li><a class="active" href="Contactme.html">Contact me</a></li>
+        </ul>
+    </div>
+<div class="welcome">
+    <h1>Welcome to the Contact me page - leave any feedback or a message here:</h1>
+</div>
+<div class="holder">
+    <form action="/action_thankyou.html" oninput="x.value=(parseInt(a.value)||0) 
+    + (parseInt(b.value)||0)">
+
+       <label for="fname">First Name</label>
+        <input type="text" id="fname"
+        name="firstname" placeholder="Your name..">
+    <label for="interests">Interests</label>
+        <select id="interests" name="interests">
+            <option
+    value="social media">Social media</option>
+        <option value="programming">Programming</option>
+        <option value="gaming">Gaming</option>
+        </select>
+
+        <label for="Give_feedback">Give feedback</label>
+        <textarea id="Give_feedback" name="Give_feedback" placeholder="Write_something..." style="height:200px"></textarea>
+        
+    <div class="change">
+    <h2>Please Rate this website from 0 to 10. 10 being best</h2>
+    0
+   
+    <input type="range" id="a" name="a" value="0" min="0" max="10">
+    10 +
+    <br>
+    <input type="number" id="b" name="b" value="10">
+    =
+    <output name="x" for="a b">10</output>
+    </div>
+    <br>
+    <input type="submit" value="Submit">
+    </form>
+</div>
+
+<script>
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    window.location.href = 'thank_you.html';
+});
+</script>
+
+</body>
+</html>
